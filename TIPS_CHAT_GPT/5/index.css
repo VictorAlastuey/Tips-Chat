@@ -1,0 +1,82 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Estilos de la galería */
+main {
+    padding: 2rem;
+}
+
+.galeria {
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.imagen {
+    flex: 1;  /* Cada imagen ocupará un espacio igual */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover en las imágenes */
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-bottom: 1rem; /* Espacio entre las imágenes */
+    }
+}

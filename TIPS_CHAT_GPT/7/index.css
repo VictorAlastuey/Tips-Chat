@@ -1,0 +1,139 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Estilos para el main */
+main {
+    padding: 2rem;
+}
+
+/* Sección de la Galería */
+.gallery {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.imagen {
+    width: 32%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto de transición sobre las imágenes */
+.imagen img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* Sección de las Cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite que las cards se acomoden en varias filas si el espacio es pequeño */
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Efecto hover en las cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividad: para pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Las cards ocupan el 80% del ancho en pantallas pequeñas */
+        margin-bottom: 1rem;
+    }
+}
